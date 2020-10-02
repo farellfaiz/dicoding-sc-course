@@ -10,6 +10,17 @@ body {
     border: 1px solid gray;
     border-radius: 6px;
     margin: 60px auto;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+    transition: all 0.5s;
+    transition-timing-function: ease;
+}
+
+#profile-container:hover {
+    box-shadow: none;
+    position: relative;
+    transform: translateX(7px) translateY(7px);
 }
 
 #profile-picture {
